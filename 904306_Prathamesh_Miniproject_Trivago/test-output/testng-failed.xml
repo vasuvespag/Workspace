@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Mini_Project.Hotel_Availability">
+        <methods>
+          <include name="close"/>
+          <include name="check_in_date"/>
+          <include name="verify_persons_and_rooms"/>
+          <include name="invoke"/>
+          <include name="data"/>
+          <include name="validate_city"/>
+          <include name="check_out_date"/>
+          <include name="display_hotels"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Mini_Project.Hotel_Availability -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-26T17:53:36 IST" name="Surefire suite" finished-at="2020-11-26T17:53:41 IST" duration-ms="4323">
+    <groups>
+    </groups>
+    <test started-at="2020-11-26T17:53:36 IST" name="Surefire test" finished-at="2020-11-26T17:53:41 IST" duration-ms="4323">
+      <class name="com.PageObjectModelwithPF.TestHotelAppTest">
+        <test-method signature="init()[pri:0, instance:com.PageObjectModelwithPF.TestHotelAppTest@5cdd8682]" started-at="2020-11-26T17:53:36 IST" name="init" finished-at="2020-11-26T17:53:41 IST" duration-ms="4119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+      </class> <!-- com.PageObjectModelwithPF.TestHotelAppTest -->
+      <class name="com.PageObjectModelwithPF.HotelAppTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.PageObjectModelwithPF.HotelAppTest@679b62af]" started-at="2020-11-26T17:51:55 IST" name="initialize" finished-at="2020-11-26T17:53:36 IST" duration-ms="101648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:com.PageObjectModelwithPF.HotelAppTest@679b62af]" started-at="2020-11-26T17:53:41 IST" name="TeardownTest" finished-at="2020-11-26T17:53:48 IST" duration-ms="7145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+      </class> <!-- com.PageObjectModelwithPF.HotelAppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

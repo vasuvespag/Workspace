@@ -1,0 +1,11 @@
+chromedriver=C:\\Selenium Lib\\chromedriver.exe
+
+IEdriver=C:\\Selenium Lib\\IEDriverServer.exe
+
+url=https://www.google.co.in
+
+username=un
+
+password=//input[@id='pass']
+
+login_button=login

@@ -1,0 +1,11 @@
+#//////////Application URL//////////
+
+sAppURL=http://www.adactinhotelapp.com/
+
+#//////////Username //////////
+
+Username=vasu1234
+
+#//////////Password //////////
+
+Password=vasu1234

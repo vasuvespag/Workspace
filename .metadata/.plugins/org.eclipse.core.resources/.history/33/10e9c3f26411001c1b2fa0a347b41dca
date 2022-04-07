@@ -1,0 +1,47 @@
+package test;
+
+import static org.junit.Assert.*;
+import java.io.FileInputStream;
+import java.util.Properties;
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ParametrizationTest {
+	private WebDriver driver;
+	  private String baseUrl;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Vasu\\Vasu\\Vasu\\drivers\\ChromeDriver\\chromedriver.exe");
+	      driver = new FirefoxDriver();
+	      baseUrl = "http://www.adactin.com";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		
+		driver.get(baseUrl);
+		String strFile = "./DataPool/HA_HotelSearch.xls";
+	 	String strLocation =  HA_GF_readXL(1,"Location",strFile);
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

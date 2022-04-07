@@ -1,0 +1,14 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoadOpenCart
+{
+
+	public static void main(String[] args)
+	{
+		WebDriver driver =new FirefoxDriver();
+		
+		driver.get("http://demo.opencart.com/");
+	}
+
+}

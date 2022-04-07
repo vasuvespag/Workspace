@@ -1,0 +1,19 @@
+import org.junit.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class JUnitWD01 {
+@BeforeTest
+public void method1(){
+System.out.println("Before");
+}
+@Test
+public void method2(){
+System.out.println("Test");
+}
+@AfterTest
+public void method3(){
+System.out.println("After");
+}
+}
+

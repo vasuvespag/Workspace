@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-31T16:43:01 IST" name="Default suite" finished-at="2021-03-31T16:44:31 IST" duration-ms="89996">
+    <groups>
+    </groups>
+    <test started-at="2021-03-31T16:43:01 IST" name="Default test" finished-at="2021-03-31T16:44:31 IST" duration-ms="89996">
+      <class name="Mini_Project.Hotel_Availability">
+        <test-method is-config="true" signature="data()[pri:0, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:02 IST" name="data" finished-at="2021-03-31T16:43:06 IST" duration-ms="4058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method signature="invoke()[pri:1, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:06 IST" name="invoke" finished-at="2021-03-31T16:43:13 IST" duration-ms="7599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoke -->
+        <test-method signature="verifycity()[pri:2, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:13 IST" name="verifycity" finished-at="2021-03-31T16:43:17 IST" duration-ms="4162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycity -->
+        <test-method signature="check_in_date()[pri:3, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:17 IST" name="check_in_date" finished-at="2021-03-31T16:43:21 IST" duration-ms="4128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_in_date -->
+        <test-method signature="check_out_date()[pri:4, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:21 IST" name="check_out_date" finished-at="2021-03-31T16:43:23 IST" duration-ms="1122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_out_date -->
+        <test-method signature="verify_persons_and_rooms()[pri:5, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:23 IST" name="verify_persons_and_rooms" finished-at="2021-03-31T16:43:28 IST" duration-ms="4960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_persons_and_rooms -->
+        <test-method signature="search()[pri:6, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:28 IST" name="search" finished-at="2021-03-31T16:43:31 IST" duration-ms="3856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="display_hotels()[pri:7, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:31 IST" name="display_hotels" finished-at="2021-03-31T16:43:41 IST" duration-ms="9996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- display_hotels -->
+        <test-method signature="sort_rating()[pri:8, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:41 IST" name="sort_rating" finished-at="2021-03-31T16:43:42 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sort_rating -->
+        <test-method signature="validate_city()[pri:9, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:43:42 IST" name="validate_city" finished-at="2021-03-31T16:44:30 IST" duration-ms="47907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_city -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Mini_Project.Hotel_Availability@77167fb7]" started-at="2021-03-31T16:44:30 IST" name="close" finished-at="2021-03-31T16:44:31 IST" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Mini_Project.Hotel_Availability -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

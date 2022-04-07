@@ -1,0 +1,33 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.*;
+
+public class FindElementDemo04 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebElement element;		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("file:///D:/Selenium%20Latest%20Demos/Lesson%205-HTML%20Pages/Lesson%205-HTML%20Pages/WorkingWithForms.html");
+		driver.manage().window().maximize();
+		
+		element = driver.findElement(By.id("txtUserName"));
+        element.sendKeys("Smita");
+        Thread.sleep(5000);
+        
+        driver.findElement(By.name("txtPwd")).sendKeys("cg@123");
+        Thread.sleep(5000);
+        
+        driver.findElement(By.className("Format")).sendKeys("cg@123");
+        Thread.sleep(5000);
+        
+        driver.findElement(By.cssSelector("Input.Format1")).sendKeys("cg@123");
+        Thread.sleep(5000);
+        
+	}
+}

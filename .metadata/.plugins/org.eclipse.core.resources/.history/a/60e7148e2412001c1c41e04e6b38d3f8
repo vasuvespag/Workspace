@@ -1,0 +1,112 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Locale;
+import java.util.Properties;
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.read.biff.BiffException;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ParametrizationTest {
+	private WebDriver driver;
+	  private String baseUrl;
+
+	@Before
+	public void setUp() throws Exception {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Vasu\\Vasu\\Vasu\\drivers\\ChromeDriver\\chromedriver.exe");
+	      driver = new ChromeDriver();
+	      baseUrl = "http://adactinhotelapp.com";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		
+		//driver.close();
+	}
+
+	@Test
+	public void test() {
+		driver.get(baseUrl);
+		driver.findElement(By.xpath(".//*[@id='username']")).clear();
+	    driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("vasu1234");
+	    driver.findElement(By.id("password")).clear();
+	    driver.findElement(By.id("password")).sendKeys("vasu1234");
+	    driver.findElement(By.id("login")).click();
+		String strFile = "./DataPool/HA_HotelSearch.xls";
+	 	String strLocation =  HA_GF_readXL(1,"Location",strFile);
+	 	new Select(driver.findElement(By.id("location"))).selectByVisibleText(strLocation);
+	}
+	
+	public static String HA_GF_readXL (int row, String column, String strFilePath) 
+	{
+			Cell c= null;
+			int reqCol=0;
+			WorkbookSettings ws = null;
+			Workbook workbook = null;
+			Sheet sheet = null;
+			FileInputStream fs = null;
+	try{
+		fs = new FileInputStream(new File(strFilePath));
+		ws = new WorkbookSettings();
+		ws.setLocale(new Locale("en", "EN"));
+				
+		// opening the work book and sheet for reading data
+		workbook = Workbook.getWorkbook(fs, ws);
+		sheet = workbook.getSheet(0);
+		
+		// Sanitise given data
+		String col = column.trim();
+		
+		//loop for going through the given row
+		for(int j=0; j<sheet.getColumns(); j++)
+		{
+			Cell cell = sheet.getCell(j,0);
+			if((cell.getContents().trim()).equalsIgnoreCase(col))
+			{	
+				reqCol= cell.getColumn();
+				//System.out.println("column No:"+reqCol);
+				c = sheet.getCell(reqCol, row);
+				fs.close();
+				return c.getContents();
+			}
+		}
+	}
+	catch(BiffException be)
+	{
+		
+		System.out.println("The given file should have .xls extension.");
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+		
+	}
+	System.out.println("NO MATCH FOUND IN GIVEN FILE: PROBLEM IS COMING FROM DATA FILE");
+	
+	return null;
+	}
+
+}

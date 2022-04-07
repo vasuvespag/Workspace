@@ -1,0 +1,17 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoadOpenCart
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver =new FirefoxDriver();
+		
+		driver.get("http://demo.opencart.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		
+	}
+
+}

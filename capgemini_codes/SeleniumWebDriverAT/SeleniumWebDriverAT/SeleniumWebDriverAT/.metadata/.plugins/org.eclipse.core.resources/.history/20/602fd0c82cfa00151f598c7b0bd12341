@@ -1,0 +1,19 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.*;
+
+public class FindElementDemo04 {
+
+	public static void main(String[] args) 
+	{
+				
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("file:///D:/Selenium%20Latest%20Demos/Lesson%205-HTML%20Pages/Lesson%205-HTML%20Pages/WorkingWithForms.html");
+		
+			}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ParametrizationDemoDataProvider/src/param/dataproviderdemo/com/Test Case Login.java&apos; to &apos;TestCaseLogin.java&apos;" description="Rename resource &apos;Test Case Login.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/param/dataproviderdemo/com/Test Case Login.java" name="TestCaseLogin.java" stamp="1646452102966" updateReferences="true"/>
+</session>

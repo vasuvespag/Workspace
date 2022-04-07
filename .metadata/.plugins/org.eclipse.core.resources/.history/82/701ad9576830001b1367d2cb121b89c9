@@ -1,0 +1,13 @@
+Feature:
+As a user
+I want to be able to login to the hotelApp and 
+
+@Everytime
+Given I am on HotelApp login page
+When I specify the following details
+      | username | password |
+      | adactin123 | adactin123 |
+      | Adaptive234 | Maxx234 |
+And Click on SignIn button
+Then I am successfully logged in
+

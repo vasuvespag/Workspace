@@ -1,0 +1,33 @@
+package ORusingXMLPackage;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.dom4j.Document;
+import org.dom4j.io.SAXReader;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TestLoginPageXML {
+	static String driverPath = "C:\\Selenium Lib\\";
+	@Test
+	public void TestXML() throws Exception
+	{
+		File src= new File("./ObjectRepository.xml");
+		FileInputStream fis = new FileInputStream(src);	
+		SAXReader saxReader = new SAXReader();
+		Document document = saxReader.read(fis);
+		//String uname= document.selectSingleNode("//login_detail/username").getText();
+		//------- Selenium Webdriver code -------
+		System.setProperty("webdriver.chrome.driver",driverPath+"chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///D:/Shubhangi/Shubhi's%20Artifacts/Artifacts%202018/April/AT%20M4%20Selenium%20Demos/LoginDemoPage.html");
+		
+	//	driver.findElement(By.id("uname")).sendKeys("capgemini");
+		driver.findElement(By.id(document.selectSingleNode("//login_detail/username").getText())).sendKeys("capgemini");
+		driver.findElement(By.xpath(document.selectSingleNode("//login_detail/password").getText())).sendKeys("capgemini");
+		driver.findElement(By.id(document.selectSingleNode("//login_detail/login_button").getText())).click();
+	}
+}

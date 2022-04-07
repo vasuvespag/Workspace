@@ -1,0 +1,24 @@
+//It contains the WebDriver class needed to instantiate a new browser loaded with a specific driver.
+import org.openqa.selenium.*;
+
+//It contains the FirefoxDriver class needed to instantiate a FireFox-specific driver onto the browser
+//instantiated by the WebDriver class
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoadOpenCart
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		WebDriver driver=new FirefoxDriver();
+		Thread.sleep(5000);
+				
+		driver.get("http://demo.opencart.com/");
+		Thread.sleep(5000);
+		
+		driver.manage().window().maximize();
+		Thread.sleep(10000);
+		
+		driver.quit();
+	}
+}

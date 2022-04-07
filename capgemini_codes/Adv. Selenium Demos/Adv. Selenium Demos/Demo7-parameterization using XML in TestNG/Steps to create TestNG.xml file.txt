@@ -1,0 +1,18 @@
+1. Create Java project "DemoJavaProject"
+2. Create package  "param.xmldemo.com"
+3. Create class without main method   "TestNGxmldemo.java"
+4. create test case using testNG @Test annotation 
+5. Right click on "TestNGxmldemo.java" file -> TestNG -> Convert To TestNG
+6. write belo code in testng.xml file
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="test">
+<parameter name="sUsername" value="capgemini"/>
+ <parameter name="sPassword" value="capgemini"/> 
+  <classes> 
+  <class name="param.xmldemo.com.LoginVerification"/>  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

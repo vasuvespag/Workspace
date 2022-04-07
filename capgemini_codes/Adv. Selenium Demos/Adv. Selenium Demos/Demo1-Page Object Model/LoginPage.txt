@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package com.appname.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+ //This class will store all the locators and methods of Login page
+ 
+public class LoginPage {
+	WebDriver driver;	
+By username= By.id("txtUserName");
+By password = By.xpath("//*[@id='txtPassword']");
+
+//creating parameterized constructor to initialize WebDriver reference
+public LoginPage(WebDriver driver)
+{
+	this.driver =driver;
+}
+public void typeusername()
+{
+	driver.findElement(username).sendKeys("Capgemini");
+}
+
+public void typepassword() {
+	driver.findElement(password).sendKeys("capgemini");
+}
+}

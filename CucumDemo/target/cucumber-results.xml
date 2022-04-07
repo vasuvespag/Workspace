@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="17" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="22" time="77.693">
+<testcase classname="HotelApp Login" name="Login Successful" time="28.102">
+<system-out><![CDATA[Given User is on HotelApp Login Page........................................passed
+When User enters Username...................................................passed
+And User enters Password....................................................passed
+And User Clicks on Login button.............................................passed
+Then Login is successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Login" name="Login successful." time="8.919">
+<system-out><![CDATA[Given User is on HotelApp Login Page........................................passed
+When User enters Username as <"Anu56789">...................................passed
+And User enters Password as <"Anus@345">....................................passed
+And User Clicks on Login button.............................................passed
+Then Login is successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Login" name="Login successful. 2" time="9.032">
+<system-out><![CDATA[Given User is on HotelApp Login Page........................................passed
+When User enters Username as <"Deepak2510">.................................passed
+And User enters Password as <"Deepak@2000">.................................passed
+And User Clicks on Login button.............................................passed
+Then Login is successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Login" name="Login successful. 3" time="20.465">
+<system-out><![CDATA[Given User is on HotelApp Login Page........................................passed
+When User enters Username as <"Vasuvespag">.................................passed
+And User enters Password as <"Vasu1234">....................................passed
+And User Clicks on Login button.............................................passed
+Then Login is successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="HotelApp Login" name="Login Successful" time="10.413">
+<system-out><![CDATA[Given User is on HotelApp Login Page........................................passed
+When User enters Username as <"vasuvespag">.................................passed
+And User enters Password as <"Vasu1234">....................................passed
+And User Clicks on Login button.............................................passed
+Then Login is successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is First Scenario" time="0.007">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given this is the first step................................................undefined
+When this is the second step................................................skipped
+Then this is the third step.................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Second Scenario" time="0.002">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given this is the first step................................................undefined
+When this is the second step................................................skipped
+Then this is the third step.................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Third Scenario" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given this is the first step................................................undefined
+When this is the second step................................................skipped
+Then this is the third step.................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Successful Login" time="0.006">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="UnSuccessful Login" time="0.002">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Add a product to bag" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Add multiple product to bag" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Remove a product from bag" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Remove all products from bag" time="0">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Decrease product quantity from bag page" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Buy a product with cash payment" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Buy a product with CC payment" time="0.002">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Payment declined" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Payment declined 2" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Payment declined 3" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Payment declined 4" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="ECommerce Application" name="Payment declined 5" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given This is a blank test..................................................undefined
+]]></failure>
+</testcase>
+</testsuite>

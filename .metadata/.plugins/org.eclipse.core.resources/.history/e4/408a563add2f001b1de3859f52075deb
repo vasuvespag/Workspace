@@ -1,0 +1,20 @@
+Feature:
+As a user
+I want to be able to login to the hotelApp and 
+
+Background:
+Given I am on HotelApp login page
+When I specify Username and Password
+And Click on SignIn button
+
+@Smoke
+    Scenario: Name display on successful login
+Given Click on signin button
+When I am successfully logged in
+Then Name is displayed
+
+@Regression @Everytime
+    Scenario: Book a hotel
+Given I select location
+When I provide required details
+Then Hotel is booked

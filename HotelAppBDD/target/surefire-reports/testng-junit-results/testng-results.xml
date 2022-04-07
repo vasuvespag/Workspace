@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-27T13:59:03 IST" name="Surefire suite" finished-at="2020-11-27T13:59:04 IST" duration-ms="233">
+    <groups>
+    </groups>
+    <test started-at="2020-11-27T13:59:03 IST" name="Surefire test" finished-at="2020-11-27T13:59:04 IST" duration-ms="233">
+      <class name="HotelAppBDD.HotelAppBDD.AppTest">
+        <test-method signature="shouldAnswerWithTrue()" started-at="2020-11-27T13:59:04 IST" name="shouldAnswerWithTrue" finished-at="2020-11-27T13:59:04 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- HotelAppBDD.HotelAppBDD.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

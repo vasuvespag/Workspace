@@ -1,0 +1,109 @@
+
+Scenario: Login Successful             # Features/HotelAppCucm.feature:3
+  Given User is on HotelApp Login Page # com.stepDefinition.HotelAppExample.user_is_on_hotel_app_login_page()
+  When User enters Username            # com.stepDefinition.HotelAppExample.user_enters_username()
+  And User enters Password             # com.stepDefinition.HotelAppExample.user_enters_password()
+  And User Clicks on Login button      # com.stepDefinition.HotelAppExample.user_clicks_on_login_button()
+  Then Login is successful             # com.stepDefinition.HotelAppExample.login_is_successful()
+
+Scenario Outline: Login successful.         # Features/HotelAppOutline.feature:13
+  Given User is on HotelApp Login Page      # com.stepDefinition.HotelAppExample.user_is_on_hotel_app_login_page()
+  When User enters Username as <"Anu56789"> # com.stepDefinition.HotelAppExample.user_enters_username_as(java.lang.String)
+  And User enters Password as <"Anus@345">  # com.stepDefinition.HotelAppExample.user_enters_password_as(java.lang.String)
+  And User Clicks on Login button           # com.stepDefinition.HotelAppExample.user_clicks_on_login_button()
+  Then Login is successful                  # com.stepDefinition.HotelAppExample.login_is_successful()
+
+Scenario Outline: Login successful.           # Features/HotelAppOutline.feature:14
+  Given User is on HotelApp Login Page        # com.stepDefinition.HotelAppExample.user_is_on_hotel_app_login_page()
+  When User enters Username as <"Deepak2510"> # com.stepDefinition.HotelAppExample.user_enters_username_as(java.lang.String)
+  And User enters Password as <"Deepak@2000"> # com.stepDefinition.HotelAppExample.user_enters_password_as(java.lang.String)
+  And User Clicks on Login button             # com.stepDefinition.HotelAppExample.user_clicks_on_login_button()
+  Then Login is successful                    # com.stepDefinition.HotelAppExample.login_is_successful()
+
+Scenario Outline: Login successful.           # Features/HotelAppOutline.feature:15
+  Given User is on HotelApp Login Page        # com.stepDefinition.HotelAppExample.user_is_on_hotel_app_login_page()
+  When User enters Username as <"Vasuvespag"> # com.stepDefinition.HotelAppExample.user_enters_username_as(java.lang.String)
+  And User enters Password as <"Vasu1234">    # com.stepDefinition.HotelAppExample.user_enters_password_as(java.lang.String)
+  And User Clicks on Login button             # com.stepDefinition.HotelAppExample.user_clicks_on_login_button()
+  Then Login is successful                    # com.stepDefinition.HotelAppExample.login_is_successful()
+
+Scenario: Login Successful                    # Features/HotelAppParam.feature:3
+  Given User is on HotelApp Login Page        # com.stepDefinition.HotelAppExample.user_is_on_hotel_app_login_page()
+  When User enters Username as <"vasuvespag"> # com.stepDefinition.HotelAppExample.user_enters_username_as(java.lang.String)
+  And User enters Password as <"Vasu1234">    # com.stepDefinition.HotelAppExample.user_enters_password_as(java.lang.String)
+  And User Clicks on Login button             # com.stepDefinition.HotelAppExample.user_clicks_on_login_button()
+  Then Login is successful                    # com.stepDefinition.HotelAppExample.login_is_successful()
+
+@First
+Scenario: This is First Scenario # Features/TaggedHook.feature:4
+  Given this is the first step
+  When this is the second step
+  Then this is the third step
+
+@Second
+Scenario: This is Second Scenario # Features/TaggedHook.feature:10
+  Given this is the first step
+  When this is the second step
+  Then this is the third step
+
+@Third
+Scenario: This is Third Scenario # Features/TaggedHook.feature:16
+  Given this is the first step
+  When this is the second step
+  Then this is the third step
+
+@FunctionalTest @SmokeTest @RegressionTest
+Scenario: Successful Login   # Features/Test.feature:5
+  Given This is a blank test
+
+@FunctionalTest @RegressionTest
+Scenario: UnSuccessful Login # Features/Test.feature:9
+  Given This is a blank test
+
+@FunctionalTest @SmokeTest
+Scenario: Add a product to bag # Features/Test.feature:13
+  Given This is a blank test
+
+@FunctionalTest
+Scenario: Add multiple product to bag # Features/Test.feature:16
+  Given This is a blank test
+
+@FunctionalTest @SmokeTest @RegressionTest
+Scenario: Remove a product from bag # Features/Test.feature:20
+  Given This is a blank test
+
+@FunctionalTest @RegressionTest
+Scenario: Remove all products from bag # Features/Test.feature:24
+  Given This is a blank test
+
+@FunctionalTest
+Scenario: Decrease product quantity from bag page # Features/Test.feature:27
+  Given This is a blank test
+
+@FunctionalTest @SmokeTest @End2End
+Scenario: Buy a product with cash payment # Features/Test.feature:31
+  Given This is a blank test
+
+@FunctionalTest @SmokeTest @End2End
+Scenario: Buy a product with CC payment # Features/Test.feature:35
+  Given This is a blank test
+
+@FunctionalTest @End2End
+Scenario Outline: Payment declined # Features/Test.feature:43
+  Given This is a blank test
+
+@FunctionalTest @End2End
+Scenario Outline: Payment declined # Features/Test.feature:44
+  Given This is a blank test
+
+@FunctionalTest @End2End
+Scenario Outline: Payment declined # Features/Test.feature:45
+  Given This is a blank test
+
+@FunctionalTest @End2End
+Scenario Outline: Payment declined # Features/Test.feature:46
+  Given This is a blank test
+
+@FunctionalTest @End2End
+Scenario Outline: Payment declined # Features/Test.feature:47
+  Given This is a blank test

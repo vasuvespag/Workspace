@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;pages&apos; to &apos;PageObjectModelwithPF/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;HotelApp_TestAutomation&apos;&#x0D;&#x0A;- Destination element: &apos;PageObjectModelwithPF/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;HotelApp_TestAutomation/src/pages&apos;" description="Copy package" destination="=PageObjectModelwithPF/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;pages" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1606308273851" version="1.0"/>
+</session>

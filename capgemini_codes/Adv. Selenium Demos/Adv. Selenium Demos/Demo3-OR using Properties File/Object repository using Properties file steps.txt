@@ -1,0 +1,13 @@
+Object repository Or properties file or configuration file
+
+Plain text file which contains data in key value pair.
+can use it as configuration file : a file which consist of data which can be used across the project.
+without using POM one can use for object repository
+in property file -  an store browser driver path, url, locators
+
+Steps to create property file in eclips
+1. Create java project
+2. Add Selenium webdriver jar file
+3. Right click on project and create folder - configuration
+4.Right click on configuration folder and  file - config.property
+5. Create key and values in property file 

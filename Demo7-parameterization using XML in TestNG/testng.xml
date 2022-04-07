@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="sUsername" value="capgemini"/>
+ <parameter name="sPassword" value="capgemini"/> 
+ <classes> 
+  <class name="param.xmldemo.com.LoginVerification"/>  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,13 @@
+Object repository using XML file
+
+Steps to create XMl file in eclipse
+1. Create Java project
+2. Right click on project -> New -> Other -> XML - XML File
+3.Name xml file - ObjectRepository.XML
+4.Write XML code
+5.Import jaxen.jar  and dom4j-1.6.jar file in eclipse to read XML file
+
+
+
+Ref 
+https://www.guru99.com/object-repository-selenium.html

@@ -1,0 +1,23 @@
+package ORusingXMLPackage;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.dom4j.Document;
+import org.dom4j.io.SAXReader;
+import org.testng.annotations.Test;
+
+public class ReadXMLFile {
+	@Test
+	public void TestXML() throws Exception
+	{
+		File src= new File("./ObjectRepository.xml");
+		FileInputStream fis = new FileInputStream(src);	
+		SAXReader saxReader = new SAXReader();
+		Document document = saxReader.read(fis);
+		String uname= document.selectSingleNode("//login_detail/username").getText();
+		System.out.println(uname);
+	}
+	
+}

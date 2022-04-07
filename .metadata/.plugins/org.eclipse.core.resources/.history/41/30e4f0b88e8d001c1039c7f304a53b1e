@@ -1,0 +1,24 @@
+package test;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver; 
+
+public class MyFirstTest {
+	
+	public static WebDriver driver;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://www.google.com");
+		
+		driver.findElement(By.name("q")).sendKeys("w3Schools");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		//driver.findElement(By.xpath("//span[contains(.,'w3schools')]"));
+		//driver.findElement(By.xpath("//h3[contains(.,'W3Schools Online Web Tutorials')]"));
+
+	}
+
+}

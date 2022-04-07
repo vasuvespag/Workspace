@@ -1,0 +1,14 @@
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class CloseAndQuitDemo
+{
+
+	public static void main(String[] args)
+	{
+		WebDriver driver = new FirefoxDriver();
+
+		driver.get("http://www.popuptest.com/popuptest2.html");
+		driver.quit();  // using QUIT all windows will close
+	}
+}

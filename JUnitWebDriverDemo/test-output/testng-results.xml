@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="64" started-at="2016-04-30T07:13:03Z" finished-at="2016-04-30T07:13:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="64" started-at="2016-04-30T07:13:03Z" finished-at="2016-04-30T07:13:03Z">
+      <class name="TestNGWD03">
+        <test-method status="PASS" signature="testCaseOne()[pri:0, instance:TestNGWD03@ee68d8]" name="testCaseOne" duration-ms="51" started-at="2016-04-30T12:43:03Z" finished-at="2016-04-30T12:43:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseOne -->
+      </class> <!-- TestNGWD03 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
